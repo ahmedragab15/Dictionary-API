@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #3b6df7;
+    --hover-color: #0846f0;
+    --bg-color: #85a3f7;
+    --text-color: #1f194c;
+}
+
+.dictionary {
+    min-height: 100vh;
+    background: var(--bg-color);
+    position: relative;
+    font-family: "Poppins", serif;
+}
+
+.container {
+    background: #fff;
+    width: min(835px, 90%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px #26213d33;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: var(--main-color) 1px solid;
+    font-size: 1rem;
+}
+
+.search-box button {
+    width: 25%;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    padding: 15px 0;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: var(--hover-color);
+}
+
+.result {
+    position: relative;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.result h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.result button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.result button:hover{
+    color: var(--hover-color);
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px;
+    font-size: 0.9rem;
+}
+
+.result .word-meaning {
+    color: #575a7b;
+}
+
+.result .word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid var(--main-color);
+    padding-left: 1.25rem;
+    margin-top: 2rem;
+}
+.result .error{
+    margin-top: 50px;
+    text-align: center;
+}
