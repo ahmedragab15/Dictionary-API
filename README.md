@@ -24,4 +24,4 @@ A simple **Dictionary API** integration built with **HTML, CSS, and JavaScript**
 
 ## 🚀 Live Demo  
 
-[Live Demo Here](https://github.com/ahmedragab15/Dictionary-API)  
+[Live Demo Here](https://ahmedragab15.github.io/Dictionary-API)  
